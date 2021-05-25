@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+/* base */
+#subContents h4{ color: #333; font-size: 40px; opacity: 0; }
+#subContents > div{ padding: 100px 0; position: relative; }
+
+/* js */
+#subContents h4.active{ opacity: 1; transition: 0.6s ease-in-out; }
+
+/* procedure */
+#procedure{  width: 100%; overflow: hidden; background-color: #f3f8fd }
+#procedure .conWrap{ 
+    position: relative; width: 1180px; 
+    margin: 0 auto; padding-bottom: 100px; box-sizing: border-box;
+}
+#procedure h4{ text-align: right; right: -30px; }
+#procedure .text{ position: absolute; font-size: 18px; font-weight: 400; color: #666; line-height: 30px; letter-spacing: 1px; }
+#procedure .bold{ font-size: 20px; font-weight: 600; color: #333; line-height: 30px; }
+#procedure .small{ font-size: 14px; font-weight: 400; color: #999; line-height: 30px; }
+
+/* steps */
+#procedure .conWrap > p{ opacity: 0; }
+#step01{ top: 410px; left: 70px; }
+#step02{ top: 230px; right: 125px; }
+#step03{ top: 590px; right: 80px; }
+#step04{ top: 800px; left: 160px; }
+#step05{ top: 1150px; left: -30px; }
+#step06{ top: 1195px; left: 400px; }
+#step07{ top: 1195px; right: 35px; }
+
+/* js */
+#procedure h4.active{ right: 0; }
+#procedure .conWrap > p.active{ opacity: 1; transition: 0.3s ease-in-out; }
+#procedure #step01.active{ left: 100px; transition-delay: 0.6s; }
+#procedure #step02.active{ right: 95px; transition-delay: 1.2s; }
+#procedure #step03.active{ right: 50px; transition-delay: 1.8s; }
+#procedure #step04.active{ left: 190px; transition-delay: 2.4s; }
+#procedure #step05.active{ left: 0; transition-delay: 3.0s; }
+#procedure #step06.active{ left: 430px; transition-delay: 3.6s; }
+#procedure #step07.active{ right: 5px; transition-delay: 4.2s; }
+
+
+/* schedule */
+#schedule{ width: 1180px; margin: 0 auto; }
+#schedule h4{ text-align: right; }
+#schedule .conWrap{ opacity: 0; width: 100%; height: 800px; padding-top: 100px; }
+
+#schedule .conWrap > div{
+    float: left; width: 33.3%; height: 100%;
+}
+#schedule ul{ 
+    float: left; width: 100%; padding: 25px; box-sizing: border-box; 
+}
+.conWrap li{
+    font-size: 16px; font-weight: 400; color: #666; 
+    line-height: 30px; letter-spacing: 1px; 
+}
+.conWrap > div > ul > li:first-child{ 
+    color: #333; letter-spacing: 3px; font-size: 30px; 
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.1);
+}
+#schedule li:before{ content: "· "; font-size: 18px; color: #666; }
+#schedule .conWrap > div > ul > li:first-child:before{ content: ""; }
+
+#schedule .conWrap.active{ opacity: 1; transition: 0.6s ease-in-out; transition-delay: 0.3s; }
+
+/* box */
+#colum01 ul{ height: 50%; background-color: #fbfbfb; }
+#colum01 li:first-child{ font-weight: 500; }
+#colum01 img{ float: left; width: 100%; height: 50%; }
+
+#colum02 ul, #colum03 ul{ height: 25%; }
+#colum02 li:first-child{ font-weight: 600; }
+
+#colum03 .first{ background-color: #e9f0ec; }
+#colum03 .second{ background-color: #bdd2c7; }
+#colum03 .third{ background-color: #a7c4b5; }
+#colum03 .last{ background-color: #65977e; }
+
+#colum03 li:first-child{ font-weight: 600; }
+#colum03 .first li:first-child{ font-size: 35px; }
+#colum03 .second li:first-child{ font-size: 40px; }
+#colum03 .third li:first-child{ font-size: 45px; }
+#colum03 .last li:first-child{ font-size: 55px; color: #fff;  }
+
+#colum03 li{ color: #333; }
+#colum03 .last li{ color: #fff; }
+#colum03 .last li:before{ color: #fff; }
+
+
+/* estimate */
+#estimate{ width: 1180px; margin: 0 auto; box-sizing: border-box; }
+#estimate h4{ text-align: center; margin-bottom: 100px; }
+#estimate caption{ display: block; position: absolute;  right: -999em; }
+#estimate table{ opacity: 0; width: 100%; text-align: center; }
+#estimate th{ 
+    padding: 10px; 
+    background-color: #246b47; 
+    font-size: 24px; color: #fff; letter-spacing: 3px; 
+}
+#estimate td{ 
+    padding: 10px; box-sizing: border-box; 
+    border-bottom: 1px solid #bdd2c7; font-size: 18px;
+    letter-spacing: 1px; 
+}
+
+#estimate .greenBg td{ background-color: #e9f0ec; }
+#estimate .last td{ background-color: #a7c4b5; }
+#estimate .red{ color: #6b2424; }
+
+/* js */
+#estimate table.active{ opacity: 1; transition: 0.6s ease-in-out; transition-delay: 0.3s; }
+
+/* iBanner */
+#iBanner{ position: relative; }
+#iBanner img{ width: 100%; min-width: 1180px; }
+#iBanner p{ 
+    position: absolute; top: calc(50% - 25px); left: 0; right: 0; 
+    font-size: 40px; color: #fff; font-weight: 500;
+    text-align: center; letter-spacing: 5px; 
+}

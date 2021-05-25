@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/* base */
+#subContents{ width: 1180px; padding: 100px 0; margin: 0 auto; }
+
+/* notice */
+.noticeTable{ position: relative; width: 100%; }
+
+#boardForm{ position: absolute; top: -150px; right: 0; float: right; }
+#findSelect{ 
+    float: left; 
+    width: 80px; height: 40px; 
+    padding-left: 10px; margin-right: 5px; box-sizing: border-box; 
+    border: 1px solid #ccc; border-radius: 5px;
+}
+#searchBox{ 
+    float: left; 
+    width: 300px; height: 40px; 
+    margin-right: 5px; padding-left: 15px; box-sizing: border-box;
+    border: 1px solid #ccc; border-radius: 5px;
+}
+#searchBtn{ 
+    float: left; 
+    display: block; 
+    width: 40px; height: 40px; 
+    border: none; border-radius: 5px; box-sizing: border-box;
+    background-color: #246b47;
+    background-image: url(../images/more/icon_search.png);
+    background-size: contain; background-repeat: no-repeat;
+}
+
+.noticeTable table{ width: 1180px; box-sizing: border-box;  margin-bottom: 50px; }
+.noticeTable caption{ position: absolute; left: -999em; }
+
+#subContents .noticeTable th{ 
+    height: 50px; text-align: center; 
+    background-color: #246b47; border-right: 1px solid #fff;  
+    color: #fff; font-size: 18px; text-align: center;
+    letter-spacing: 3px; font-weight: 400; 
+}
+#subContents .noticeTable th:last{ border-right: none; }
+
+#subContents .noticeTable td{
+    width: 190px; height: 50px; 
+    border-bottom: 1px solid #e9f0ec; 
+    font-size: 18px; text-align: center; line-height: 50px; 
+}
+
+#subContents .noticeTable .context{
+    width: 800px; height: 50px; 
+    padding: 0 40px; 
+    line-height: 50px; text-align: left;
+    
+}
+
+#subContents .noticeTable td a{ 
+    display: block; 
+    width: 800px; height: 100%;
+    font-size: 18px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; 
+}
+#subContents .noticeTable td a:hover{ text-decoration: underline; color: #999; }
+
+.noticeTable .pageBtn{ width: 100%; }
+.noticeTable .pageNum{ 
+    width: 100%; height: 100px; 
+    font-size: 50px; font-weight: 500;
+    text-align: center; line-height: 25px; 
+}
+.noticeTable .pageNum > *{ margin: 0 5px; }
+.noticeTable .pageNum > b{ color: #246b47; }
+
+.noticeTable .btnWrap{ position: absolute; bottom: 0; right: 0; }
+.noticeTable .btnWrap a{ 
+    display: inline-block; 
+    width: 100px; height: 50px; 
+    margin-right: 5px; box-sizing: border-box; 
+    border: 1px solid #ccc; border-radius: 5px; 
+    color: #999; font-weight: 400; font-size: 16px; 
+    text-align: center; line-height: 46px; letter-spacing: 1px;
+}
+.noticeTable .btnWrap a.writeBtn{ background-color: #246b47; color: #fff; border-radius: 5px; }
+
+
+/* notice_write */
+#boardWrite{ width: 100%; overflow: hidden;  }
+#boardWrite table{ width: 100%; margin-bottom: 50px; }
+#boardWrite caption{ position: absolute; left: -999em; }
+#boardWrite th{ 
+    width: 15%; border-top: none; padding: 10px 0; 
+    background-color: #e9f0ec; 
+    color: #333; font-weight: 400; font-size: 16px 
+}
+#boardWrite td{ 
+    padding: 10px 30px; font-size: 18px; 
+    text-align: left; border-bottom: 1px solid #e9f0ec; 
+}
+#boardWrite .top th, #boardWrite .top td{ border-top: 1px solid  #e9f0ec;  }
+#boardWrite th label{ font-size: 18px; color: #333; }
+#noticeTitle{ 
+    width: 100%; height: 40px; border: 1px solid #ccc; 
+    padding: 0 30px; box-sizing: border-box; 
+}
+#noticeContent{ 
+    width: 100%; padding: 30px; border: 1px solid #ccc; 
+    box-sizing: border-box; resize: none; 
+}
+#boardWrite .btnWrap{ width: 100%; text-align: center; }
+#boardWrite .btnWrap > *{ 
+    display: inline-block; 
+    width: 100px; height: 50px; 
+    border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; 
+    text-align: center; line-height: 46px; color: #999; font-weight: 500; margin: 0 2px; }
+#boardWrite .btnWrap > .submitBtn{ background-color: #246b47; color: #fff; }
+
+
+/* notice_view */
+.noticeView{ width: 1180px; padding: 100px 0 50px; margin-bottom: 50px; }
+.noticeView caption{ position: absolute; left: -999em; }
+#subContents .noticeView th{ width: 15%; border-top: none; background-color: #e9f0ec; }
+#subContents .noticeView td{ 
+    padding: 15px 30px; box-sizing: border-box;
+    border-top: none; border-bottom: 1px solid #e9f0ec; 
+    text-align: left;
+}
+#subContents .noticeView .top th, #subContents .noticeView .top td{ border-top: 1px solid #e9f0ec;  }
+.noticeView + .btnWrap{ width: 100%; text-align: center; }
+.noticeView + .btnWrap > *{ 
+    display: inline-block; 
+    width: 100px; height: 50px; 
+    margin: 0 2px 50px; ; box-sizing: border-box; 
+    border: 1px solid #ccc; border-radius: 5px; 
+    text-align: center; line-height: 46px; 
+    font-weight: 500; font-size: 16px; color: #999;
+}
+.noticeView + .btnWrap > .modifyBtn{ background-color: #246b47; color: #fff; }
+.noticeView + .btnWrap > .deleteBtn{ background-color: #6b2424; color: #fff; border: 1px solid #6b2424; }

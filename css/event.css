@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+#subContents .tabBox .conWrap > .onGoing{
+    width: 1180px; margin: 60px 0 40px; 
+}
+#subContents .tabBox .conWrap > .onGoing li{
+    float: left; margin-right: 20px; margin-bottom: 20px; box-sizing: border-box; 
+}
+#subContents .tabBox .conWrap > .onGoing li:nth-child(2n){ margin-right: 0; }
+
+#subContents .tabBox .conWrap > .done{
+    padding: 100px 0; font-size: 30px; color: #999; letter-spacing: 2px; text-align: center; 
+}

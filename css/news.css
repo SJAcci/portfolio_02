@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* base */
+#subContents{ width: 1180px; padding: 100px 0; margin: 0 auto; }
+
+/* news */
+.newsTable{ position: relative; width: 100%; }
+
+#boardForm{ position: absolute; top: -150px; right: 0; float: right; }
+#findSelect{ 
+    float: left; 
+    width: 80px; height: 40px; 
+    padding-left: 10px; margin-right: 5px; box-sizing: border-box; 
+    border: 1px solid #ccc; border-radius: 5px;
+}
+#searchBox{ 
+    float: left; 
+    width: 300px; height: 40px; 
+    margin-right: 5px; padding-left: 15px; box-sizing: border-box;
+    border: 1px solid #ccc; border-radius: 5px;
+}
+#searchBtn{ 
+    float: left; 
+    display: block; 
+    width: 40px; height: 40px; 
+    border: none; border-radius: 5px; box-sizing: border-box;
+    background-color: #246b47;
+    background-image: url(../images/more/icon_search.png);
+    background-size: contain; background-repeat: no-repeat;
+}
+
+.newsTable table{ width: 1180px; box-sizing: border-box;  margin-bottom: 50px; }
+.newsTable caption{ position: absolute; left: -999em; }
+
+#subContents .newsTable th{ 
+    height: 50px; text-align: center; 
+    background-color: #246b47; border-right: 1px solid #fff;  
+    color: #fff; font-size: 18px; text-align: center;
+    letter-spacing: 3px; font-weight: 400; 
+}
+#subContents .newsTable th:last{ border-right: none; }
+
+#subContents .newsTable td{
+    width: 190px; height: 50px; 
+    border-bottom: 1px solid #e9f0ec; 
+    font-size: 18px; text-align: center; line-height: 50px; 
+}
+
+#subContents .newsTable .context{
+    width: 800px; height: 50px; 
+    padding: 0 40px; 
+    line-height: 50px; text-align: left;
+    
+}
+
+#subContents .newsTable td a{ 
+    display: block; 
+    width: 800px; height: 100%;
+    font-size: 18px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; 
+}
+#subContents .newsTable td a:hover{ text-decoration: underline; color: #999; }
+
+.newsTable .pageBtn{ width: 100%; }
+.newsTable .pageNum{ 
+    width: 100%; height: 100px; 
+    font-size: 50px; font-weight: 500;
+    text-align: center; line-height: 25px; 
+}
+.newsTable .pageNum > *{ margin: 0 5px; }
+.newsTable .pageNum > b{ color: #246b47; }
+

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+#subContents{ 
+    position: relative; 
+    width: 100%; min-width: 1180px; 
+    margin: 0 auto; background-image: url(../images/couponandevent/bg_subcontents.png); 
+    background-repeat: no-repeat; 
+    background-size: cover; background-position: center;
+    /*background-attachment: fixed; */
+}
+
+#contentsWrap{ width: 100%; border-bottom: 1px solid #ededed;;}
+#contentsWrap input{  
+    display: block; 
+    width: 1180px; height: 120px; 
+    margin: 150px auto; padding-left: 50px; box-sizing: border-box;
+    border: 1px solid #ccc; border-radius: 10px; 
+    font-size: 36px; line-height: 100px; font-weight: 500; color: #333;
+}
+#contentsWrap form{ position: relative; width: 1180px; margin: 0 auto; }
+#contentsWrap input::placeholder{ color: #999; letter-spacing: 2px; }
+#contentsWrap button{
+    position: absolute; top: 0; bottom: 0; right: 10px;
+    background-color: transparent;
+}
+#titleWrap{ 
+    width: 1180px; 
+    margin: 0 auto; padding: 100px 0; box-sizing: border-box; 
+}
+#titleWrap > h5{ 
+    position: relative; 
+    margin-bottom: 120px; padding-left: 50px; box-sizing: border-box;
+    color: #246b47; font-size: 36px;  
+}
+#titleWrap > h5:after{
+    position: absolute; left: 0; top: 70px;
+    content: '';
+    width: 1180px; height: 5px; background-color: #246b47;
+}
+#titleWrap li{ color: #666; font-size: 24px; line-height: 60px; }
+#titleWrap span{ color: #246b47; font-size: 24px; font-weight: 600;}
+#titleWrap li:last-child{ padding-bottom: 100px; }
+#titleWrap li:before{
+    content: '· '; font-size: 28px; font-weight: 700; color: #ffd700;
+    
+}

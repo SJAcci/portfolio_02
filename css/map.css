@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+.map_wrap{
+    position: relative;
+    width: 1180px; height: 700px; 
+    margin: 50px auto;
+}
+#map{ 
+    float: right;
+    width: 780px; height: 100%;
+}
+#menu_wrap{ 
+    width: 380px; height: 100%; 
+    background-color: #fff; 
+    box-shadow: 5px 5px 5px rgba(00,0,0,0.2);
+    overflow-y: auto; overflow: hidden;
+}
+#menu_wrap .option{ 
+    float: left;
+    position: absolute; top: -105px;  
+    width: 100%;
+}
+#menu_wrap .option form{ 
+    float: left;
+    font-size: 20px; letter-spacing: 2px; color: #666; 
+}
+#menu_wrap .option form p{ 
+    float: left; 
+    margin-right: 10px; line-height: 40px; 
+    font-size: 18px; color: #999; letter-spacing: 1px;
+}
+#menu_wrap #keyword{ 
+    float: left;
+    padding: 5px 10px; box-sizing: border-box; 
+    border: none; border-bottom: 1px solid #ccc;  
+    color: #666; font-size: 20px; letter-spacing: 2px;
+    background-color: transparent; 
+}
+#menu_wrap .option button{ 
+    display: block; float: left;
+    width: 50px; height: 50px;  
+    border: none; 
+    background-image: url(../images/main/store_icon_search.png);
+    background-color: transparent; background-size: contain;
+    background-repeat: no-repeat;
+}
+#menu_wrap hr{ border: none; }
+
+
+
+
+
+#placesList .item{ 
+    position: relative; 
+    min-height: 120px; padding: 30px; box-sizing: border-box; 
+    overflow: hidden;
+    border-bottom: 1px solid #ededed; 
+    cursor: pointer;
+}
+#placesList .item span{ display: block; margin-top:4px; }
+#placesList .item h5, #placesList .item .info{ 
+    text-overflow: ellipsis; overflow: hidden; 
+    white-space: nowrap;
+}
+#placesList .item .info{ padding: 10px 0 10px 55px;}
+#placesList .info .gray{ color: #999; font-size: 18px; }
+#placesList .info .tel{ color: #246b47; }
+
+#placesList .item .markerbg{ 
+    float: left; 
+    position: absolute; 
+    width: 100%; height: 40px; 
+    background-image: url(../images/store/icon_mapmarker.png); background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#pagination{ margin: 10px auto; text-align: center; }
+#pagination a{ display: inline-block; margin-right:10px;}
+#pagination .on{ font-weight: bold; cursor: default; color: #333; }*/

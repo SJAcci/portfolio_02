@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+#subContents{ width: 1180px; margin: 0 auto; padding: 100px 0; 
+overflow: hidden; }
+
+
+/* privacy rules */
+#subContents p{ 
+    height: 100px; margin-bottom: 50px; 
+    font-size: 16px; color: #999; line-height: 20px; letter-spacing: 2px;  
+}
+#subContents h5{
+    height: 50px; margin-bottom: 50px; 
+    color: #246b47; font-size: 24px; letter-spacing: 2px; 
+}
+#privacyRules{ 
+    width: 100%; height: 265px; overflow-y: scroll; 
+    padding: 30px; box-sizing: border-box; 
+    background-color: #ededed; 
+}
+.privacyChk{ 
+    position: relative; left: calc(100% - 210px);
+    width: 100%; height: 40px; 
+    margin-top: 10px; margin-bottom: 50px; line-height: 40px; 
+}
+.privacyChk input, .privacyChk label, #csType{ 
+    float: left; height: 40px; font-size: 16px; margin-right: 5px;
+}
+
+
+/* csForm */
+#csForm caption{ position: absolute; left: -999em; }
+#csForm th{ 
+    width: 300px; height: 80px; padding-left: 60px; box-sizing: border-box; text-align: left; 
+}
+#csForm th label, #csType{
+    height: 80px;
+    color: #999; font-size: 18px; font-weight: 400; 
+    letter-spacing: 2px; line-height: 80px;
+}
+#csForm tr:first-child{ border-top: 2px solid #246b47; }
+#csForm tr{ border-bottom: 1px solid #ededed; }
+#csForm td{
+    width: 880px; height: 50px; 
+    font-size: 18px; line-height: 50px; text-align: left; 
+}
+#csForm td select{ 
+    width: 280px; height: 50px; 
+    padding: 10px 20px; box-sizing: border-box; margin-right: 10px;
+    border: 1px solid #ccc; border-radius: 5px;  
+}
+#userName, #tel, #email, #orderNum{ 
+    width: 380px; height: 50px; 
+    padding: 10px 20px; box-sizing: border-box; 
+    border: 1px solid #ccc; border-radius: 5px; 
+}
+#tel::placeholder{ color: #ccc; font-size: 14px; }
+#title{ 
+    width: 580px; height: 50px; 
+    padding: 10px 20px; box-sizing: border-box; 
+    border: 1px solid #ccc; border-radius: 5px; 
+}
+
+textarea{ 
+    width: 850px; height: 300px; margin-top: 20px;
+    border: 1px solid #ccc; border-radius: 5px;     
+}
+
+
+/* btnWrap */
+.btnWrap{ width: 100%; text-align: center; margin-top: 50px;  }
+.btnWrap > *{ 
+    display: inline-block; 
+    width: 100px; height: 50px;
+    margin: 0 2px; box-sizing: border-box; 
+    border: 1px solid #ccc; border-radius: 5px; 
+    color: #999; font-weight: 500; background-color: #fff;
+    text-align: center; line-height: 46px; cursor: pointer; 
+}
+.btnWrap > #submitBtn{ background-color: #246b47; color: #fff; cursor: pointer; }
